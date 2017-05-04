@@ -1,0 +1,195 @@
+{
+	"list": [{
+		"_id": 703448,
+		"coord": {
+			"lon": 30.516666,
+			"lat": 50.433334
+		},
+		"country": "UA",
+		"geoname": {
+			"cl": "P",
+			"code": "PPLC",
+			"parent": 703447
+		},
+		"name": "Kiev",
+		"stat": {
+			"level": 1.0,
+			"population": 2514227
+		},
+		"stations": [{
+			"id": 7348,
+			"dist": 28,
+			"kf": 1
+		}, {
+			"id": 7358,
+			"dist": 6,
+			"kf": 1
+		}, {
+			"id": 7359,
+			"dist": 29,
+			"kf": 1
+		}, {
+			"id": 31431,
+			"dist": 36,
+			"kf": 1
+		}],
+		"zoom": 4
+	}, {
+		"_id": 6058560,
+		"coord": {
+			"lon": -81.23304,
+			"lat": 42.983391
+		},
+		"country": "CA",
+		"geoname": {
+			"cl": "P",
+			"code": "PPL",
+			"parent": 6093943
+		},
+		"name": "London",
+		"stat": {
+			"level": 1.0,
+			"population": 346765
+		},
+		"stations": [{
+			"id": 3678,
+			"dist": 12,
+			"kf": 1
+		}, {
+			"id": 10399,
+			"dist": 4,
+			"kf": 1
+		}, {
+			"id": 32573,
+			"dist": 17,
+			"kf": 1
+		}, {
+			"id": 35275,
+			"dist": 44,
+			"kf": 1
+		}, {
+			"id": 36133,
+			"dist": 4,
+			"kf": 1
+		}],
+		"zoom": 9
+	}, {
+		"_id": 292223,
+		"coord": {
+			"lon": 55.304722,
+			"lat": 25.258169
+		},
+		"country": "AE",
+		"geoname": {
+			"cl": "P",
+			"code": "PPLA",
+			"parent": 292224
+		},
+		"name": "Dubai",
+		"stat": {
+			"level": 1.0,
+			"population": 1137347
+		},
+		"stations": [{
+			"id": 7100,
+			"dist": 5,
+			"kf": 1
+		}, {
+			"id": 7104,
+			"dist": 23,
+			"kf": 1
+		}],
+		"zoom": 5
+	}, {
+		"_id": 361058,
+		"coord": {
+			"lon": 29.955271,
+			"lat": 31.215639
+		},
+		"country": "EG",
+		"geoname": {
+			"cl": "P",
+			"code": "PPLA",
+			"parent": 361059
+		},
+		"name": "Alexandria",
+		"stat": {
+			"level": 1.0,
+			"population": 3811516
+		},
+		"stations": [{
+			"id": 6388,
+			"dist": 3,
+			"kf": 1
+		}, {
+			"id": 6389,
+			"dist": 40,
+			"kf": 1
+		}],
+		"zoom": 6
+	}, {
+		"_id": 698740,
+		"coord": {
+			"lon": 30.732622,
+			"lat": 46.477474
+		},
+		"country": "UA",
+		"geoname": {
+			"cl": "P",
+			"code": "PPLA",
+			"parent": 698738
+		},
+		"name": "Odessa",
+		"stat": {
+			"level": 1.0,
+			"population": 1001558
+		},
+		"stations": [{
+			"id": 7366,
+			"dist": 6,
+			"kf": 1
+		}],
+		"zoom": 6
+	}, {
+		"_id": 696643,
+		"coord": {
+			"lon": 34.54073,
+			"lat": 49.593731
+		},
+		"country": "UA",
+		"geoname": {
+			"cl": "P",
+			"code": "PPLA",
+			"parent": 696634
+		},
+		"name": "Poltava",
+		"stat": {
+			"level": 1.0,
+			"population": 317847
+		},
+		"zoom": 7
+	}, {
+		"_id": 706448,
+		"coord": {
+			"lon": 32.617802,
+			"lat": 46.655811
+		},
+		"country": "UA",
+		"geoname": {
+			"cl": "P",
+			"code": "PPLA",
+			"parent": 706442
+		},
+		"name": "Kherson",
+		"stat": {
+			"level": 1.0,
+			"population": 15000
+		},
+		"stations": [{
+			"id": 7365,
+			"dist": 69,
+			"kf": 1
+		}],
+		"zoom": 8
+	}]
+}
