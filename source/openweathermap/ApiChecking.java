@@ -16,11 +16,11 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 /*
- * Данный класс реализует методы cборки апи с ресурса http://api.openweathermap.org 
- * путем выборки параметров для get запроса из локального файла. 
+ * This class implements methods of building api from the http://api.openweathermap.org 
+ * by fetching parameters for get a query from a local file. 
  */
 
-public class MyApi {
+public class ApiChecking {
 	
 	public static String key = "appid=e24b841213a930b339399227886fa8bb";
 	public static String apiForOneDay = "http://api.openweathermap.org/data/2.5/weather?";
@@ -32,15 +32,16 @@ public class MyApi {
 	
 	public static void main(String[] args) throws Exception {
 		
-		MyApi api = new MyApi();
+		ApiChecking api = new ApiChecking();
 		api.positiveScenario();
 		System.out.println("-------------negative-scenario---------------");
 		api.negativeScenario();
 	}
 	
 	
-	/* метод реализует позитивные сценарии тестов, сравнивая параметры в get запросе с данными получеными от сервера в json формате
-	 * Так как апи отдает координаты по разному пришлось округлять параметры координат.
+	/* The method implements positive scenario of tests 
+	 * Since api gives the coordinates in different ways, 
+	 * we had to round off the coordinate parameters.
 	 */
 	public void positiveScenario() throws Exception{
 		JSONArray array = getDataFromFile(dataParametrs);
@@ -49,10 +50,10 @@ public class MyApi {
 			JSONObject coord = (JSONObject)list.get("coord");
 			String lon = coord.get("lon").toString();
 			String lat = coord.get("lat").toString();
-			// округление для апи http://api.openweathermap.org/data/2.5/weather?lat=50.433334&lon=30.516666
+			//Rounding for api http://api.openweathermap.org/data/2.5/weather?lat=50.433334&lon=30.516666
 			double roundLat = Math.rint(100.0*Double.parseDouble(lat))/100.0;
 			double roundLon = Math.rint(100.0*Double.parseDouble(lon))/100.0;
-			//округление для апи http://api.openweathermap.org/data/2.5/forecast?lat=50.433334&lon=30.516666
+			//Rounding for api http://api.openweathermap.org/data/2.5/forecast?lat=50.433334&lon=30.516666
 			double roundLatFewDays = Math.round(Double.parseDouble(lat) * 10000.0) / 10000.0;
 			double roundLonFewDays = Math.round(Double.parseDouble(lon) * 10000.0) / 10000.0;
 			
@@ -221,7 +222,7 @@ public class MyApi {
 	      }
 	      return result;
 	   }
-	//читаем данные из локального json файла
+	//read data from local file json
 	public static String readDataFromFile(String path) throws IOException{
 		String res = "";
 		String line;

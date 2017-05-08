@@ -10,17 +10,14 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
-
-
-public class SpeedExecute {
+public class FastExecute {
 	
-		public static void main(String[] args) {
-			Api api = new Api();
+		public static void main(String[] args) throws IOException {
+			LinkBilder bilder = new LinkBilder();
+			bilder.parseLinksOnSite();
+			isCode200(bilder.getAllListApi());
 			
-			isCode200(api.getAllListApi());
-			//isCode200(api.apiFiveNewTests());
-			//isCode200(api.apiGetOneTest());
-			//parseApiFiveNewTests(api.apiFiveNewTests());
+			//parseApiFiveNewTests(bilder.apiFiveNewTests());
 			
 		}
 		
@@ -34,7 +31,7 @@ public class SpeedExecute {
 	            	if(response==200){
 	            		System.out.println(url +" - " + response);	
 	            	}else{
-	            		System.out.println("ERROR" + url);
+	            		System.out.println("ERROR " + url);
 	            		throw new Error();
 	            	}
 	            }); 
